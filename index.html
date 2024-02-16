@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="pp"s>
       <section class="w-full mx-auto bg-[#F9F6E2] p-14">
         <div class="md:flex items-center justify-center">
           <div class="mr-12">
@@ -37,7 +37,7 @@
         </div>
       </section>
     </header>
-    <main>
+    <main class="pp">
       <section>
         <div
           class="max-w-full mx-auto grid grid-cols-1 lg:grid-cols-5 gap-5 px-20 bg-slate-50 cursor-pointer"
@@ -85,7 +85,7 @@
                       />
                     </div>
                     <h3 class="text-2xl font-bold">K. Accessories</h3>
-                    <span class="text-slate-500">$ 39.00</span>
+                    <span class="text-slate-500">$ <span class="spon1">39.00</span></span>
                   </div>
                 </div>
                 <div class="text-center card bg-white py-3 rounded-md">
@@ -124,7 +124,7 @@
                       />
                     </div>
                     <h3 class="text-2xl font-bold">G. Accessories</h3>
-                    <span class="text-slate-500">$ 24.00</span>
+                    <span class="text-slate-500">$<span class="spon1">43.00</span></span>
                   </div>
                 </div>
                 <div class="text-center card bg-white px-2 py-4 rounded-md">
@@ -163,7 +163,7 @@
                       />
                     </div>
                     <h3 class="text-2xl font-bold">Dish Cooker</h3>
-                    <span class="text-slate-500">$ 99.00</span>
+                    <span class="text-slate-500">$<span class="spon1">99.00</span></span>
                   </div>
                 </div>
               </div>
@@ -211,7 +211,7 @@
                       />
                     </div>
                     <h3 class="text-2xl font-bold">Sports Back Cap</h3>
-                    <span class="text-slate-500">$ 49.00</span>
+                    <span class="text-slate-500">$<span class="spon1">67.00</span></span>
                   </div>
                 </div>
 
@@ -251,7 +251,7 @@
                       />
                     </div>
                     <h3 class="text-2xl font-bold">Full Jersey Set</h3>
-                    <span class="text-slate-500">$ 69.00</span>
+                    <span class="text-slate-500">$<span class="spon1">437.00</span></span>
                   </div>
                 </div>
 
@@ -291,7 +291,7 @@
                       />
                     </div>
                     <h3 class="text-2xl font-bold">Sports cates</h3>
-                    <span class="text-slate-500">$ 149.00</span>
+                    <span class="text-slate-500">$<span class="spon1">143.00</span></span>
                   </div>
                 </div>
               </div>
@@ -339,7 +339,7 @@
                       />
                     </div>
                     <h3 class="text-2xl font-bold">Single Relax Chair</h3>
-                    <span class="text-slate-500">$ 185.00</span>
+                    <span class="text-slate-500">$<span class="spon1">185.00</span></span>
                   </div>
                 </div>
 
@@ -379,7 +379,7 @@
                       />
                     </div>
                     <h3 class="text-2xl font-bold">Children play</h3>
-                    <span class="text-slate-500">$ 299.00</span>
+                    <span class="text-slate-500">$<span class="spon1">473.00</span></span>
                   </div>
                 </div>
 
@@ -419,12 +419,16 @@
                       />
                     </div>
                     <h3 class="text-2xl font-bold">Flexible Sofa</h3>
-                    <span class="text-slate-500">$ 399.00</span>
+                    <span class="text-slate-500">$<span class="spon1">399.00</span></span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+
+          <!-- here start the cart section -->
+
           <div class="md:flex lg:col-span-1 mt-32">
             <div>
               <div class="bg-white p-6 rounded-md">
@@ -443,21 +447,30 @@
                   </button>
                 </div>
               </div>
+
+
+              <div class="bg-white text-stone-600 w-full text-center text-[30px]">stat</div>
+
+
+
+
+
+
               <div class="my-8 p-4 bg-white rounded-md">
                 <div id="title-container"></div>
                 <hr class="my-4" />
                 <p class="text-xl font-bold py-2">
-                  Total Price: $<span id="totalPrice"></span>
+                  Total Price: $<span id="totalPrice">0</span>
                 </p>
 
                 <p class="text-xl font-bold py-2">
-                  Discount: $<span id="discountPrice"></span>
+                  Discount: $<span id="discountPrice">0</span>
                 </p>
                 <p class="text-xl font-bold pb-2">
                   Total: $<span id="total"></span>
                 </p>
                 <hr class="my-4" />
-                <button class="btn btn-wide bg-[#F11A7B] text-white">
+                <button id="lol" class="btn btn-wide bg-[#F11A7B] text-white">
                   Make Purchase
                 </button>
               </div>
@@ -466,6 +479,11 @@
         </div>
       </section>
     </main>
+
+    <div id="pur" class="hidden h-full w-full">
+      <h1 class="text-center text-[70px] font-[700]">THANK YOU FOR PURCHASE</h1>
+
+    </div>
 
     <script src="script.js"></script>
   </body>
